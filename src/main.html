@@ -22,10 +22,25 @@
 
     <body>
 
-        <div class="w3-container w3-inconsolata w3-red">
+        <div class="meSlide w3-container w3-inconsolata w3-red">
             <p class="w3-xxlarge" style="text-align:center"><b>Hi</b>, I'm <b>Jonathan Huo</b>.</p>
-            <img class="w3-circle" alt="This should be a picture of me." src="./imgs/cartoonprofl.jpg" style="width:20% ; display:block ; margin-left:auto ; margin-right:auto"></img>
+
+            <img class="w3-circle" alt="There should be a picture of me here." src="./imgs/cartoonprofl.jpg" style="width:20% ; display:block ; margin-left:auto ; margin-right:auto"></img>
             <p class="w3-xxlarge" style="text-align:center"><b>This</b> is a <b>cartoon</b> of <b>me</b>.</p>
+        </div>
+
+        <div class="meSlide w3-container w3-inconsolata w3-red">
+            <p class="w3-xxlarge" style="text-align:center"><b>Hi</b>, I'm <b>Jonathan Huo</b>.</p>
+
+            <img class="w3-circle" alt="There should be a picture of me here." src="./imgs/scaryme2.jpg" style="width:20% ; display:block ; margin-left:auto ; margin-right:auto"></img>
+            <p class="w3-xxlarge" style="text-align:center"><b>This</b> is a <b>scary photo</b> of <b>me</b>.</p>
+        </div>
+
+        <div class="meSlide w3-container w3-inconsolata w3-red">
+            <p class="w3-xxlarge" style="text-align:center"><b>Hi</b>, I'm <b>Jonathan Huo</b>.</p>
+
+            <img class="w3-circle" alt="There should be a picture of me here." src="./imgs/ummmmmmmmm.jpg" style="width:20% ; display:block ; margin-left:auto ; margin-right:auto"></img>
+            <p class="w3-xxlarge" style="text-align:center"><b>This</b> is a <b>messed-up photo</b> of <b>me</b>.</p>
         </div>
 
         <div class="w3-container w3-inconsolata w3-sand w3-center">
@@ -89,6 +104,23 @@
 
             </p>
         </div>
+
+        <script type="text/javascript">
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("meSlide");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+        </script>
 
     </body>
 
